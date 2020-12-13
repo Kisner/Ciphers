@@ -3,7 +3,7 @@ class Caesar:
         self.message = message
         self.shift = shift
 
-    def encrypt(self):
+    def Encrypt(self):
         encryption = ''
         message = self.message
         size = len(self.message)
@@ -18,7 +18,7 @@ class Caesar:
                 encryption += message[i]
         self.message = encryption
 
-    def decrypt(self):
+    def Decrypt(self):
         decrypt = ''
         message = self.message
         size = len(self.message)
@@ -37,7 +37,7 @@ class Caesar:
 
 if __name__ == '__main__':
     test = Caesar("This is a test", 4)
-    test.encrypt()
-    test.decrypt()
+    test.Encrypt()
+    test.Decrypt()
 
 
